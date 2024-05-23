@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="Css/Contact.css" />
+  </head>
+  <body>
+    <div class="mode">
+      Dark mode:
+      <span class="change">OFF</span>
+    </div>
+
+    <button id="toggleButton" onclick="toggleBackground()">
+      Arka Plan Resmi Gizle/Göster
+    </button>
+    <div id="countdown">
+      <div>
+        <span id="days"></span>
+        <div class="time-label">Gün</div>
+      </div>
+      <div>
+        <span id="hours"></span>
+        <div class="time-label">Saat</div>
+      </div>
+      <div>
+        <span id="minutes"></span>
+        <div class="time-label">Dakika</div>
+      </div>
+      <div>
+        <span id="seconds"></span>
+        <div class="time-label">Saniye</div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h2>Etkinlik Kayıt Formu</h2>
+      <form id="eventForm">
+        <input
+          type="text"
+          id="fullName"
+          name="fullName"
+          placeholder="Adınız Soyadınız"
+          required
+        />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="E-posta Adresiniz"
+          required
+        />
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="Telefon Numaranız"
+          required
+        />
+        <input type="date" id="eventDate" name="eventDate" required />
+        <input type="checkbox" id="terms" name="terms" required />
+        <label for="terms">Katılım koşullarını kabul ediyorum</label>
+        <input onclick="alert('Dolandırıldınız')" type="submit" value="Katıl" />
+        <div class="rating">
+          <span class="star" data-value="1">&#9733;</span>
+          <span class="star" data-value="2">&#9733;</span>
+          <span class="star" data-value="3">&#9733;</span>
+          <span class="star" data-value="4">&#9733;</span>
+          <span class="star" data-value="5">&#9733;</span>
+        </div>
+        <div id="result"></div>
+        <div id="lastRatings"></div>
+      </form>
+    </div>
+
+    <textarea id="textInput"></textarea><br />
+    <button id="reverseButton">Reverse Text</button><br />
+    <div id="output"></div>
+
+    <div class="containe">
+      <div class="slider">
+        <img src="İmages/Newst.jpg" alt="Image 1" />
+        <img src="İmages/News 2.jpg" alt="Image 2" />
+        <img src="İmages/News 3.jpg" alt="Image 3" />
+      </div>
+    </div>
+
+    <div class="toggle">Toggle Me!</div>
+    <div class="hidden">SELAMMMMMMMMMMM!</div>
+
+    <div class="accordion">
+      <div class="accordion-header">Section 1</div>
+      <div class="accordion-content">
+        <p>This is the content of section 1.</p>
+      </div>
+    </div>
+
+    <div class="accordion">
+      <div class="accordion-header">Section 2</div>
+      <div class="accordion-content">
+        <p>This is the content of section 2.</p>
+      </div>
+    </div>
+
+    <div class="containerr">
+      <div class="spinner"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="JavaScript/Contact.js"></script>
+  </body>
+</html>
